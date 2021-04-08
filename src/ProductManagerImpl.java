@@ -48,7 +48,7 @@ public class ProductManagerImpl implements ProductManager{
 
     @Override
     public List<Order> getOrdersByUser(String idUser) {
-        return null
+        return null;
     }
 
     @Override
@@ -74,5 +74,5 @@ public class ProductManagerImpl implements ProductManager{
     }
 
 }
-}
+
 
