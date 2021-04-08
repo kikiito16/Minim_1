@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class User {
-    List<Order> orders;
+    public List<Order> orders;
 }

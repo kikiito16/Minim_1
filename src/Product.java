@@ -6,7 +6,5 @@ public class Product {
       this.nombre_producto = nombre_producto;
       this.precio = precio;
    }
-   public String toString () {
-      return nombre_producto + " " + precio;
-   }
+
 }

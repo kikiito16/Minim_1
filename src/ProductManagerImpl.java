@@ -14,6 +14,7 @@ public class ProductManagerImpl implements ProductManager{
 
     Queue<Order> pendingOrders;
     List<Product> productList;
+    List<Order> orderList;
 
 
     public ProductManagerImpl (){
@@ -47,9 +48,7 @@ public class ProductManagerImpl implements ProductManager{
 
     @Override
     public List<Order> getOrdersByUser(String idUser) {
-        List<Product> l = new LinkedList<>();
-        l.add(new Product("coca-cola",2));
-        return l;
+        return null
     }
 
     @Override
@@ -59,7 +58,7 @@ public class ProductManagerImpl implements ProductManager{
 
     @Override
     public void productonuevo(String nombre_producto, double precio) {
-        Product p = new Product (nombre_producto precio);
+        Product p = new Product (nombre_producto,precio);
         this.productList.add(p);
     }
 
@@ -76,3 +75,4 @@ public class ProductManagerImpl implements ProductManager{
 
 }
 }
+
