@@ -42,7 +42,9 @@ public class Product {
       this.ventas++;
    }
 
-
+   public String toString() {
+      return nombre_producto + " " + precio;
+   }
 
 
 

@@ -1,12 +1,22 @@
 package main;
 
-import main.Order;
-
 import java.util.List;
 import java.util.ArrayList;
 
 public class User {
     private  String ID_usu;
+    private int ordenes_acabadas;
+    private String lista;
+
+
+    public int getOrdenes_acabadas() {
+        return ordenes_acabadas;
+    }
+
+    public void setOrdenes_acabadas(int ordenes_acabadas) {
+        this.ordenes_acabadas = ordenes_acabadas;
+    }
+
     private List<Order> orders_done= new ArrayList <Order>();
     public List<Order> orders = new ArrayList <Order>();
 
@@ -22,6 +32,7 @@ public class User {
 
     public void addOrderDone (Order order)
     {
+        ordenes_acabadas++;
         orders_done.add(order);
     }
 
@@ -53,4 +64,6 @@ public class User {
     {
         this.orders_done=ordersDone;
     }
+
+
 }

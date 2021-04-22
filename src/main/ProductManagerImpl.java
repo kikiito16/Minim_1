@@ -76,7 +76,10 @@ public class ProductManagerImpl implements ProductManager {
     @Override
     public List<Order> getOrdersByUser(String idUser)
     {
+        int ordenes_hechas;
+
         return hmUsers.get(idUser).getOrdersDone();
+
     }
 
     @Override
